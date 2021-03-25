@@ -86,7 +86,8 @@ class SZ_WP_REST_API_Tut {
 		echo '<h1>' . esc_html_x( 'SZ WP REST API Search with autocomplete with Vanilla JavaScript', 'admin page title', 'sz-wp-rest-api-search' ) . '</h1>';		
 		echo '<p>This is a search field intended to demostrate a result of WP REST API. Does it work? :)</br>';
 		echo '<p><input type="text" size="80" id="sz-search-field" name="sz-search-field" value="" placeholder="Start typing the title of the post...">';//Our search field
-		echo '<br><input type="hidden" size="80" id="sz-hidden-field" name="sz-hidden-field" value="">';//Hidden field to append data to
+		echo '<br><input type="hidden" size="80" id="sz_result_id" name="sz_result_id" value="">';//Hidden field to pass post ID
+		echo '<br><input type="hidden" size="80" id="sz_result_permalink" name="sz_result_permalink" value="">';//Hidden field to pass post permalink
 		echo '</div>';
     }
 }
