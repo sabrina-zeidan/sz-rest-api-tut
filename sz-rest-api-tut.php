@@ -21,7 +21,7 @@ class SZ_WP_REST_API_Tut {
     } 
  
     public function admin_menu() {
-           $hook = add_management_page( 'SZ WP REST API', 'SZ WP REST API', 'manage_options', 'sz-search', array( $this, 'admin_page_content' ), '' ); //Add a page to the Tools menu
+           $hook = add_management_page( 'SZ WP REST API', 'SZ WP REST API', 'manage_options', 'sz-search', array( $this, 'admin_page_content' )); //Add a page to the Tools menu
            add_action( "load-$hook", array( $this, 'admin_page_load' ) );//hook to load stuff on that page
     }
  	function plugin_actions_links( array $actions ) {
